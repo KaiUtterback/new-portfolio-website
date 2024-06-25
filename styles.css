@@ -3,7 +3,8 @@
     --background-color: #121212;
     --primary-color: rgba(30, 30, 30, 0.9);
     --secondary-color: rgba(58, 58, 58, 0.9);
-    --highlight-color: #007acc;
+    --highlight-color: #007acc; /* Link color */
+    --visited-link-color: #ffffff; /* Visited link color */
     --text-color: #ffffff;
     --font-family: 'Roboto', sans-serif;
     --font-size: 18px; /* Increased font size */
@@ -52,7 +53,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--highlight-color); /* Updated link color */
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     padding: 0.5rem 1rem;
@@ -225,4 +226,18 @@ footer p {
     height: 100%;
     background-color: var(--background-color);
     z-index: -1;
+}
+
+/* Link color */
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--visited-link-color);
 }
