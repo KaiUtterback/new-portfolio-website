@@ -549,3 +549,49 @@ button:hover {
     line-height: 1.6;
     margin-bottom: 5px;
 }
+
+/* Portfolio Projects Section */
+.portfolio-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.portfolio-item {
+    background-color: #444; /* Slightly lighter background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.portfolio-item h2 {
+    color: #007acc; /* Accent color for headings */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    color: #ccc; /* Lighter text color */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    background-color: #007acc; /* Accent color for buttons */
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    background-color: #005580; /* Darker shade on hover */
+}
