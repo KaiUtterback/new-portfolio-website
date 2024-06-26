@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Kai Utterback</title>
+    <title>Contact - Kai Utterback</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,45 +20,29 @@
     </header>
     <div id="particles-js"></div>
     <main>
-        <section class="resume-section">
-            <h1>Resume</h1>
-            <div class="resume-grid">
-                <div class="resume-item">
-                    <h2>Education</h2>
-                    <p>I am currently enrolled at Coding Temple to receive my Full Stack Certification. I'm learning languages like Python, CSS, HTML, JavaScript, and frameworks like Postman, Bootstrap, React Native, MySQL, and more.</p>
-                    <p>I also have a Bachelor's degree in Theology from Hillsong College in Sydney, Australia.</p>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>If you have any questions, feel free to reach out via the form below or through my social media profiles.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="resume-item">
-                    <h2>Career Goals</h2>
-                    <p>I have many goals and side projects, including making games, audio plugins, and possibly starting my own company to create innovative and creative software solutions.</p>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="resume-item">
-                    <h2>Skills and Expertise</h2>
-                    <ul>
-                        <li>Python</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>JavaScript</li>
-                        <li>Postman</li>
-                        <li>Bootstrap</li>
-                        <li>React Native</li>
-                        <li>MySQL</li>
-                    </ul>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <div class="resume-item">
-                    <h2>Experience</h2>
-                    <p><strong>Job Title 1</strong><br>Company Name<br>Dates of Employment<br>Description of responsibilities and achievements.</p>
-                    <p><strong>Job Title 2</strong><br>Company Name<br>Dates of Employment<br>Description of responsibilities and achievements.</p>
-                    <!-- Add more job experiences as needed -->
-                </div>
-                <div class="resume-item">
-                    <h2>Software Development Projects</h2>
-                    <p><strong>Contact Management System</strong><br>Description of the project. Mention languages and technologies used. Provide a brief overview of what the project does and its key features.</p>
-                    <p><strong>Text Game</strong><br>Description of the project. Mention languages and technologies used. Provide a brief overview of what the project does and its key features.</p>
-                    <p><strong>Library Organization Database</strong><br>Description of the project. Mention languages and technologies used. Provide a brief overview of what the project does and its key features.</p>
-                    <p><strong>E-Commerce API</strong><br>Description of the project. Mention languages and technologies used. Provide a brief overview of what the project does and its key features.</p>
-                    <!-- Add more projects as needed -->
-                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-media">
+                <h2>Connect with me:</h2>
+                <a href="https://twitter.com/KaiUtterback" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/KaiUtterback" target="_blank">LinkedIn</a>
+                <a href="https://github.com/KaiUtterback" target="_blank">GitHub</a>
             </div>
         </section>
     </main>
