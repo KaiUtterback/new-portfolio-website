@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects - Kai Utterback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume/CV</a></li>
+                <li><a href="projects.html">Portfolio Projects</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="particles-js"></div>
+    <main>
+        <section class="portfolio-section">
+            <h1>Portfolio Projects</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h2>E-Commerce API</h2>
+                    <p>A Flask-based RESTful API designed to manage an e-commerce system. Includes functionalities for customers, products, and orders.</p>
+                    <a href="https://github.com/KaiUtterback/ecommerce-api" target="_blank">View on GitHub</a>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Text Game</h2>
+                    <p>A text-based adventure game built with React and TypeScript, featuring interactive game mechanics and state management.</p>
+                    <a href="https://github.com/KaiUtterback/text_game" target="_blank">View on GitHub</a>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Portfolio Website</h2>
+                    <p>A personal portfolio website showcasing skills, experiences, and work in a visually appealing format, built with HTML and CSS.</p>
+                    <a href="https://github.com/KaiUtterback/new-portfolio-website" target="_blank">View on GitHub</a>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Tic-Tac-Toe</h2>
+                    <p>A classic game implemented with JavaScript, featuring a dynamic and interactive UI.</p>
+                    <a href="https://github.com/KaiUtterback/tic-tac-toe" target="_blank">View on GitHub</a>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Snake Game</h2>
+                    <p>A JavaScript-based game where the player controls a growing snake.</p>
+                    <a href="https://github.com/KaiUtterback/snake-game" target="_blank">View on GitHub</a>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Tetris</h2>
+                    <p>A JavaScript implementation of the classic Tetris game.</p>
+                    <a href="https://github.com/KaiUtterback/tetris" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kai Utterback. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#007acc"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    
+</body>
+</html>
