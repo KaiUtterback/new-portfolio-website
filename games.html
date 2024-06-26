@@ -23,31 +23,111 @@
         <section class="games-section">
             <h1>Games</h1>
 
+            <!-- Tic-Tac-Toe -->
             <div class="game">
                 <h2>Tic-Tac-Toe</h2>
                 <div id="tic-tac-toe" class="game-container"></div>
+                <div class="text-container">
+                    <h2>Game Description</h2>
+                    <p>Tic-Tac-Toe is a classic game where two players take turns marking the spaces in a 3×3 grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
+                    <h2>Game Rules</h2>
+                    <ul>
+                        <li>Players take turns marking a square.</li>
+                        <li>The first player to get three of their marks in a row (up, down, across, or diagonally) is the winner.</li>
+                        <li>If all nine squares are filled and neither player has three in a row, the game is a draw.</li>
+                    </ul>
+                </div>
                 <script src="tic-tac-toe.js"></script>
             </div>
 
+            <!-- Snake Game -->
             <div class="game">
                 <h2>Snake Game</h2>
                 <button id="start-snake">Start</button>
                 <button id="stop-snake">Stop</button>
-                <canvas id="snake" width="600" height="600"></canvas>
+                <canvas id="snake" width="300" height="300"></canvas>
+                <div class="text-container">
+                    <h2>Game Description</h2>
+                    <p>Snake is a game where the player controls a snake, which grows in length with each piece of food it eats. The game ends when the snake runs into itself or the walls.</p>
+                    <h2>Game Rules</h2>
+                    <ul>
+                        <li>Use the arrow keys to control the direction of the snake.</li>
+                        <li>Eat the food to grow longer.</li>
+                        <li>Avoid running into the walls or the snake's own tail.</li>
+                    </ul>
+                </div>
                 <script src="snake.js"></script>
             </div>
 
+            <!-- Blackjack -->
+            <div class="game">
+                <h2>Blackjack</h2>
+                <div id="blackjack" class="game-container">
+                    <div class="bet-controls">
+                        <input type="number" id="bet-input" placeholder="Enter bet amount" min="1">
+                        <button id="place-bet">Place Bet</button>
+                    </div>
+                    <div class="hand-label">Dealer's Hand</div>
+                    <div id="dealer-hand" class="hand"></div>
+                    <div class="hand-label">Player's Hand</div>
+                    <div id="player-hand" class="hand"></div>
+                    <div class="controls">
+                        <button id="deal">Deal</button>
+                        <button id="hit">Hit</button>
+                        <button id="stand">Stand</button>
+                    </div>
+                    <p id="message"></p>
+                    <p id="balance"></p>
+                </div>
+                <div class="text-container">
+                    <h2>Game Description</h2>
+                    <p>Blackjack is a card game where players try to get a hand value as close to 21 as possible without going over. Players compete against the dealer.</p>
+                    <h2>Game Rules</h2>
+                    <ul>
+                        <li>Place your bet to start the game.</li>
+                        <li>Click 'Deal' to receive your cards.</li>
+                        <li>Click 'Hit' to receive another card.</li>
+                        <li>Click 'Stand' to end your turn.</li>
+                        <li>If your hand value exceeds 21, you lose (bust).</li>
+                        <li>The dealer reveals their hand after all players have finished their turns.</li>
+                        <li>The player with the hand value closest to 21 without going over wins.</li>
+                    </ul>
+                    <h2>Strategy</h2>
+                    <ul>
+                        <li>Always hit if your hand value is 11 or less.</li>
+                        <li>Stand if your hand value is 17 or more, unless you have a soft 17 (Ace and 6).</li>
+                        <li>Double down on 10 or 11 if the dealer shows a lower card.</li>
+                        <li>Split Aces and 8s.</li>
+                        <li>Avoid insurance bets.</li>
+                    </ul>
+                </div>
+                <script src="blackjack.js"></script>
+            </div>
+
+            <!-- Tetris -->
             <div class="game">
                 <h2>Tetris</h2>
                 <div class="tetris-container">
-                    <canvas id="tetris" width="320" height="640"></canvas>
+                    <canvas id="tetris"></canvas>
                 </div>
-                <p>Use the arrow keys to move and rotate the pieces.</p>
-                <button id="start-tetris">Start Game</button>
-                <p>Score: <span id="score">0</span></p>
+                <div class="text-container">
+                    <h2>Game Description</h2>
+                    <p>Tetris is a classic puzzle game where the goal is to clear lines by perfectly fitting the falling blocks, called Tetriminos, into the playfield. The game speeds up as you clear more lines, increasing the challenge.</p>
+                    <h2>Game Rules</h2>
+                    <ul>
+                        <li>Use the arrow keys to move and rotate the Tetriminos.</li>
+                        <li><strong>Left Arrow</strong>: Move the Tetrimino left.</li>
+                        <li><strong>Right Arrow</strong>: Move the Tetrimino right.</li>
+                        <li><strong>Up Arrow</strong>: Rotate the Tetrimino clockwise.</li>
+                        <li><strong>Down Arrow</strong>: Speed up the falling Tetrimino.</li>
+                        <li>Clear lines by filling them completely with blocks.</li>
+                        <li>Game ends when the stack of Tetriminos reaches the top of the playfield.</li>
+                    </ul>
+                    <button id="start-tetris">Start Game</button>
+                    <p>Score: <span id="score">0</span></p>
+                </div>
                 <script src="tetris.js"></script>
             </div>
-            
         </section>
     </main>
     <footer>

@@ -147,6 +147,56 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
+/* Resume Section */
+.resume-section {
+    text-align: left;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-section h1 {
+    color: var(--highlight-color);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.resume-item {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume-item h2 {
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+    font-size: var(--heading-size);
+}
+
+.resume-item h3 {
+    color: var(--highlight-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.resume-item p, .resume-item ul {
+    margin-bottom: 1rem;
+}
+
+.resume-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
 
 /* Games Section */
 .games-section {
@@ -159,54 +209,6 @@ nav a:hover {
     background: transparent; /* Changed to transparent */
     border-radius: 10px; /* Rounded corners */
 }
-
-/* Resume Section */
-.resume-section {
-    text-align: center;
-    padding: 3rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    color: var(--text-color);
-}
-
-.resume-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--highlight-color);
-}
-
-.resume-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.resume-item {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.resume-item h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--highlight-color);
-}
-
-.resume-item p, .resume-item ul {
-    font-size: 1rem;
-    text-align: left;
-    color: var(--text-color);
-}
-
-.resume-item ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-}
-
 
 .games-section h1 {
     font-size: 2.5rem;
@@ -270,6 +272,8 @@ nav a:hover {
     margin: 20px auto;
     border: 2px solid var(--highlight-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Smaller size for the canvas */
+    height: 300px; /* Smaller size for the canvas */
 }
 
 #start-snake, #stop-snake {
@@ -483,25 +487,25 @@ footer {
     z-index: 2;
 }
 
-/* General Game Styles */
-.game {
-    margin-bottom: 20px;
-}
-
 /* Tetris Game */
 .tetris-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222; /* Dark background for contrast */
+    background-color: #222;
     padding: 10px;
-    margin: 20px 0;
-    border: 2px solid #007acc; /* Border color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for more contrast */
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 320px;
+    height: 640px;
 }
 canvas {
     display: block;
-    background-color: #000; /* Game canvas background color */
+    background-color: #000;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 button {
     margin-top: 10px;
@@ -511,7 +515,37 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 button:hover {
     background-color: #005f99;
+}
+
+/* Text Styles */
+.text-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    color: #fff;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.text-container ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.text-container ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 5px;
 }

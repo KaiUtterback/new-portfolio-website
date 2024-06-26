@@ -1,7 +1,11 @@
 const tetrisCanvas = document.getElementById('tetris');
 const tetrisContext = tetrisCanvas.getContext('2d');
 
-tetrisContext.scale(20, 20);
+// Set the canvas dimensions
+tetrisCanvas.width = 320;  // Set the width of the canvas
+tetrisCanvas.height = 640; // Set the height of the canvas
+
+tetrisContext.scale(20, 20); // Adjust the scaling for the blocks
 
 function tetrisArenaSweep() {
     let rowCount = 1;
@@ -218,7 +222,7 @@ const tetrisColors = [
     '#3877FF',
 ];
 
-const arena = tetrisCreateMatrix(12, 20);
+const arena = tetrisCreateMatrix(16, 32); // Adjusted width and height for better fitting
 
 const player = {
     pos: {x: 0, y: 0},
@@ -233,10 +237,12 @@ document.addEventListener('keydown', event => {
         tetrisPlayerMove(1);
     } else if (event.keyCode === 40) {
         tetrisPlayerDrop();
-    } else if (event.keyCode === 81) {
-        tetrisPlayerRotate(-1);
-    } else if (event.keyCode === 87) {
+    } else if (event.keyCode === 38) { // Up arrow for rotation
         tetrisPlayerRotate(1);
+    }
+    // Prevent the default action for the arrow keys
+    if ([37, 38, 39, 40].includes(event.keyCode)) {
+        event.preventDefault();
     }
 });
 

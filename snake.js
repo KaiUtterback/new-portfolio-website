@@ -2,11 +2,11 @@ let canvas = document.getElementById('snake');
 let context = canvas.getContext('2d');
 let box = 20;
 let snake = [];
-snake[0] = { x: 15 * box, y: 15 * box };
+snake[0] = { x: 7 * box, y: 7 * box }; // Start position of the snake
 let direction = '';
 let food = {
-    x: Math.floor(Math.random() * 29 + 1) * box,
-    y: Math.floor(Math.random() * 29 + 1) * box
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
 };
 let game;
 
@@ -17,6 +17,7 @@ document.getElementById('start-snake').addEventListener('click', () => {
     document.getElementById('start-snake').classList.add('active');
     document.getElementById('stop-snake').classList.remove('active');
 });
+
 document.getElementById('stop-snake').addEventListener('click', () => {
     clearInterval(game);
     enableScroll();
@@ -40,7 +41,7 @@ function setDirection(event) {
 
 function draw() {
     context.fillStyle = 'black';
-    context.fillRect(0, 0, 30 * box, 30 * box);
+    context.fillRect(0, 0, 16 * box, 16 * box);
 
     for (let i = 0; i < snake.length; i++) {
         context.fillStyle = i === 0 ? 'green' : 'white';
@@ -62,8 +63,8 @@ function draw() {
 
     if (snakeX === food.x && snakeY === food.y) {
         food = {
-            x: Math.floor(Math.random() * 29 + 1) * box,
-            y: Math.floor(Math.random() * 29 + 1) * box
+            x: Math.floor(Math.random() * 15 + 1) * box,
+            y: Math.floor(Math.random() * 15 + 1) * box
         };
     } else {
         snake.pop();
@@ -76,9 +77,9 @@ function draw() {
 
     if (
         snakeX < 0 ||
-        snakeX >= 30 * box ||
+        snakeX >= 16 * box ||
         snakeY < 0 ||
-        snakeY >= 30 * box ||
+        snakeY >= 16 * box ||
         collision(newHead, snake)
     ) {
         clearInterval(game);
