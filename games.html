@@ -22,7 +22,10 @@
     <main>
         <section class="games-section">
             <h1>Games</h1>
-
+            <div class="intro-container">
+                <p class="intro-text">In pursuit of expanding my expertise in game design, I have developed a variety of games. These projects demonstrate my capabilities in coding, problem-solving, and creativity. Below are some of the games I have crafted, each highlighting different facets of game mechanics and user engagement.</p>
+            </div>
+            
             <!-- Tic-Tac-Toe -->
             <div class="game">
                 <h2>Tic-Tac-Toe</h2>
@@ -45,7 +48,8 @@
                 <h2>Snake Game</h2>
                 <button id="start-snake">Start</button>
                 <button id="stop-snake">Stop</button>
-                <canvas id="snake" width="300" height="300"></canvas>
+                <button id="restart-snake" style="display:none;">Restart</button>
+                <canvas id="snake" width="500" height="500"></canvas>
                 <div class="text-container">
                     <h2>Game Description</h2>
                     <p>Snake is a game where the player controls a snake, which grows in length with each piece of food it eats. The game ends when the snake runs into itself or the walls.</p>
@@ -58,6 +62,7 @@
                 </div>
                 <script src="snake.js"></script>
             </div>
+
 
             <!-- Blackjack -->
             <div class="game">

@@ -238,6 +238,17 @@ nav a:hover {
     color: var(--text-color);
 }
 
+.games-section .intro-text {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* Center the text */
+    text-align: justify; /* Ensure justified alignment for a clean look */
+}
+
+
 /* Tic Tac Toe */
 #tic-tac-toe {
     display: grid;
